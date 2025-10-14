@@ -1,149 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Speedy Mobile Mechanics - Mobile vehicle servicing and repairs in Warrington. Same great service from our new premises."/>
-  <title>Speedy Mobile Mechanics | Warrington</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Speedy Mobile Mechanics | Warrington & Cheshire</title>
+  <meta name="description" content="Speedy Mobile Mechanics — fast, friendly mobile car repairs across Warrington and Cheshire. Servicing, brakes, diagnostics, batteries, MOT prep and more." />
+  <meta name="theme-color" content="#0A3D62" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Speedy Mobile Mechanics" />
+  <meta property="og:description" content="Fast, friendly mobile car repairs in Warrington & Cheshire." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://speedymobilemechanics.co.uk/" />
+  <meta property="og:image" content="https://speedymobilemechanics.co.uk/logo.PNG" />
+
+  <link rel="icon" href="favicon.ico" />
+
   <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #000;
-      color: #f4f4f4;
+    :root{
+      --brand:#0A3D62;--brand-2:#1B73B5;--bg:#f7f9fc;--card:#fff;--ink:#0f172a;--muted:#475569;--accent:#00C389;
     }
-
-    header {
-      background: #000;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    header img {
-      max-width: 180px;
-      margin-bottom: 1rem;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-
-    h1, h2 {
-      color: #ffffff;
-      margin-top: 0;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-    }
-
-    li {
-      margin-bottom: 0.5rem;
-    }
-
-    .highlight {
-      background-color: #111;
-      padding: 1.5rem;
-      border-left: 5px solid #ff0000;
-      margin: 2rem 0;
-    }
-
-    .contact-section {
-      background: #111;
-      padding: 1.5rem;
-      border-radius: 8px;
-      margin-top: 2rem;
-    }
-
-    .contact-section a {
-      color: #00ccff;
-      text-decoration: none;
-      display: block;
-      margin: 0.5rem 0;
-    }
-
-    .facebook-banner {
-      background: #1877f2;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin: 2rem 0;
-      border-radius: 6px;
-    }
-
-    .facebook-banner a {
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 0.5rem;
-      padding: 0.5rem 1rem;
-      border: 2px solid white;
-      border-radius: 4px;
-    }
-
-    .facebook-banner a:hover {
-      background: white;
-      color: #1877f2;
-    }
-
-    footer {
-      background: #000;
-      color: #aaa;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      margin-top: 2rem;
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+    header{background:linear-gradient(180deg,var(--brand),var(--brand-2));color:#fff}
+    .wrap{max-width:1120px;margin:auto;padding:0 16px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .logo{font-weight:800;font-size:22px;letter-spacing:.2px}
+    nav a{color:#fff;text-decoration:none;margin-left:18px;opacity:.95}
+    nav a:hover{text-decoration:underline;opacity:1}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;padding:34px 0 48px}
+    .hero h1{margin:0 0 10px;font-size:clamp(28px,4vw,44px)}
+    .hero p{color:#e6f0ff;margin:0 0 16px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn.primary{background:#fff;color:var(--brand)}
+    .btn.outline{border:2px solid #fff;color:#fff}
+    .hero img{width:100%;border-radius:16px;box-shadow:0 8px 28px rgba(0,0,0,.25);object-fit:contain;min-height:240px;background:#fff;padding:10px}
+    section{padding:56px 0}
+    h2{font-size:clamp(22px,3.2vw,32px);margin:0 0 16px}
+    .muted{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .card{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 6px 18px rgba(2,6,23,.06)}
+    .card h3{margin:.2rem 0;font-size:18px}
+    .bullets{margin:0;padding-left:18px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#eef6ff;color:#0b3d6b;font-weight:600;margin:4px 6px 0 0}
+    .sticky-cta{position:fixed;bottom:10px;left:10px;right:10px;display:flex;gap:8px;z-index:9}
+    .sticky-cta a{flex:1;text-align:center;padding:12px;border-radius:12px;font-weight:700;text-decoration:none}
+    .sticky-cta .call{background:var(--accent);color:#053b2f}
+    .sticky-cta .wa{background:#25D366;color:#063e22}
+    footer{background:#0b1f2a;color:#cfd8e3;padding:26px 0;margin-top:40px}
+    footer a{color:#e6f0ff}
+    @media (max-width:860px){
+      .hero{grid-template-columns:1fr}
+      nav{display:none}
+      .grid-2{grid-template-columns:1fr}
     }
   </style>
-</head>
-<body>
 
+  <!-- JSON-LD: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Speedy Mobile Mechanics",
+    "image": "https://speedymobilemechanics.co.uk/logo.PNG",
+    "url": "https://speedymobilemechanics.co.uk/",
+    "telephone": "+44-7860658060",
+    "areaServed": ["Warrington","Cheshire","Merseyside","Greater Manchester"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Warrington",
+      "addressRegion": "Cheshire",
+      "addressCountry": "GB"
+    },
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"09:00","closes":"15:00"}
+    ],
+    "sameAs": ["https://www.facebook.com/share/17PMYtwLiK/?mibextid=wwXIfr"]
+  }
+  </script>
+</head>
+
+<body>
   <header>
-    <img src="logo.PNG" alt="Speedy Mobile Mechanics Logo">
-    <h1>Speedy Mobile Mechanics</h1>
-    <p>Mobile servicing & repairs — Fast, reliable & local to Warrington</p>
+    <div class="wrap topbar">
+      <div class="logo">Speedy Mobile Mechanics</div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#facebook">Facebook</a>
+        <a href="#coverage">Coverage</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="wrap hero">
+      <div>
+        <h1>Fast, reliable mobile car repairs — we come to you.</h1>
+        <p>Servicing, brakes, diagnostics, batteries & MOT prep across Warrington and Cheshire. Same-day callouts available.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="tel:+447860658060">Call now</a>
+          <a class="btn outline" href="https://wa.me/447860658060?text=Hi%20Speedy%20Mobile%20Mechanics%2C%20can%20you%20help%20with..." target="_blank">WhatsApp</a>
+        </div>
+        <p class="muted" style="margin-top:8px;">Open Mon–Fri 08:00–18:00, Sat 09:00–15:00</p>
+      </div>
+      <img src="logo.PNG" alt="Speedy Mobile Mechanics logo">
+    </div>
   </header>
 
-  <div class="container">
-    <section class="highlight">
-      <p><strong>We've moved!</strong></p>
-      <p>Now at <strong>Old Winwick Quay, Mill Lane, Winwick, Warrington, WA2 8RL</strong>.</p>
-      <p>Formerly known as A2B Mobile Mechanics on Gorsey Lane.</p>
-      <p>Ollie Pritchard and Jack welcome all old and new customers. Same great service and prices — new premises!</p>
+  <main class="wrap">
+    <section id="services">
+      <h2>What we do</h2>
+      <p class="muted">Up-front pricing • No towing required • OE-quality parts with warranty</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Servicing & MOT prep</h3>
+          <ul class="bullets"><li>Interim & full services</li><li>Oil, filters & plugs</li><li>MOT checks & fixes</li></ul>
+        </div>
+        <div class="card">
+          <h3>Brakes & suspension</h3>
+          <ul class="bullets"><li>Pads & discs</li><li>Shocks, springs & arms</li><li>Wheel bearings</li></ul>
+        </div>
+        <div class="card">
+          <h3>Diagnostics & electrics</h3>
+          <ul class="bullets"><li>OBD fault finding</li><li>Batteries, alternators, starters</li><li>Warning light resets</li></ul>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>What We Do</h2>
-      <ul>
-        <li>Mobile car servicing (full & interim)</li>
-        <li>Brake repairs, batteries, exhausts</li>
-        <li>Breakdowns & roadside repairs</li>
-        <li>Diagnostic fault finding</li>
-        <li>Pre-MOT checks</li>
-      </ul>
+    <section id="pricing">
+      <h2>Simple pricing</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Call-out & diagnostics</h3>
+          <p class="muted">From £<strong>45</strong> in Warrington (includes first 20 mins). Parts priced separately.</p>
+        </div>
+        <div class="card">
+          <h3>Popular jobs (guide)</h3>
+          <p class="muted">Front pads & discs from £<strong>200</strong> fitted • Battery fit from £<strong>120</strong> • Full service from £<strong>180</strong>.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="facebook-banner">
-      <h2>📣 Follow Us on Facebook</h2>
-      <p>Get updates, offers, and see our latest work!</p>
-      <a href="https://www.facebook.com/share/1Cs5DS6rQL/?mibextid=wwXIfr" target="_blank">Visit Facebook Page</a>
+    <section id="facebook">
+      <h2>Latest from Facebook</h2>
+      <p class="muted">See recent jobs and updates direct from our page.</p>
+
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0" nonce="speedyfb"></script>
+
+      <div class="fb-page"
+        data-href="https://www.facebook.com/share/17PMYtwLiK/?mibextid=wwXIfr"
+        data-tabs="timeline"
+        data-width="500"
+        data-small-header="false"
+        data-adapt-container-width="true"
+        data-hide-cover="false"
+        data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/share/17PMYtwLiK/?mibextid=wwXIfr" class="fb-xfbml-parse-ignore">
+          <a href="https://www.facebook.com/share/17PMYtwLiK/?mibextid=wwXIfr">Speedy Mobile Mechanics</a>
+        </blockquote>
+      </div>
     </section>
 
-    <section class="contact-section">
-      <h2>Contact Us</h2>
-      <p>📍 Old Winwick Quay, Mill Lane, Winwick, Warrington, WA2 8RL</p>
-      <a href="tel:+447860658060">📞 07860 658060</a>
-      <a href="mailto:info@speedymobilemechanics.co.uk">📧 info@speedymobilemechanics.co.uk</a>
+    <section id="coverage">
+      <h2>Coverage area</h2>
+      <p class="muted">Based in Warrington — usually within 25 miles.</p>
+      <div class="pill">Warrington</div><div class="pill">Birchwood</div><div class="pill">Widnes</div><div class="pill">Runcorn</div><div class="pill">St Helens</div><div class="pill">Altrincham</div><div class="pill">Wigan</div><div class="pill">Manchester (West)</div>
+      <div class="card" style="margin-top:14px">
+        <iframe title="Service area map" src="https://www.google.com/maps?q=Warrington&output=embed" width="100%" height="260" style="border:0;border-radius:10px" loading="lazy"></iframe>
+      </div>
     </section>
+
+    <section id="contact">
+      <h2>Get a quote</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Call / WhatsApp</h3>
+          <p><a class="btn" style="background:var(--brand);color:#fff" href="tel:+447860658060">Call 07860 658060</a></p>
+          <p><a class="btn" style="background:#25D366;color:#062" href="https://wa.me/447860658060?text=Hi%20Speedy%20Mobile%20Mechanics%2C%20I%20need%20help%20with..." target="_blank">WhatsApp us</a></p>
+        </div>
+        <div class="card">
+          <h3>Email form</h3>
+          <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+            <label>Name<br><input required name="name" style="width:100%;padding:10px;margin-top:6px"></label><br><br>
+            <label>Phone<br><input required name="phone" type="tel" style="width:100%;padding:10px;margin-top:6px"></label><br><br>
+            <label>Vehicle & issue<br><textarea required name="message" rows="4" style="width:100%;padding:10px;margin-top:6px" placeholder="e.g. 2016 Fiesta, brake squeal"></textarea></label><br><br>
+            <button class="btn" style="background:var(--accent);color:#063e22" type="submit">Request a quote</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="sticky-cta">
+    <a class="call" href="tel:+447860658060">Call now</a>
+    <a class="wa" href="https://wa.me/447860658060?text=Hi%20Speedy%20Mobile%20Mechanics">WhatsApp</a>
   </div>
 
   <footer>
-    &copy; 2025 Speedy Mobile Mechanics · Serving Warrington and beyond
+    <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+      <div>&copy; <span id="y"></span> Speedy Mobile Mechanics</div>
+      <div><a href="#contact">Contact</a></div>
+    </div>
   </footer>
 
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
