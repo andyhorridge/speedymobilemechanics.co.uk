@@ -21,6 +21,11 @@
         content="Speedy Mobile Mechanics - vehicle servicing, repairs and diagnostics in Warrington and Cheshire. Mobile service available or visit us at Old Winwick Quay."
     >
 
+    <link
+        rel="canonical"
+        href="https://www.speedymobilemechanics.co.uk/"
+    >
+
     <style>
 
         * {
@@ -170,12 +175,6 @@
             color: #071a0e;
         }
 
-        .button-outline {
-            border: 1px solid #555;
-            color: #fff;
-            background: #111;
-        }
-
 
         /* GENERAL */
 
@@ -286,10 +285,60 @@
         }
 
 
+        /* GOOGLE REVIEWS */
+
+        .reviews-section {
+            background: #0a0a0a;
+        }
+
+        .reviews-box {
+            background:
+                radial-gradient(circle at top, #241b05 0%, #111 50%, #0b0b0b 100%);
+            border: 1px solid #292929;
+            border-radius: 14px;
+            padding: 50px 30px;
+            text-align: center;
+        }
+
+        .reviews-stars {
+            color: #fbbc04;
+            font-size: 2.2rem;
+            letter-spacing: 4px;
+            margin-bottom: 12px;
+        }
+
+        .reviews-box h2 {
+            margin: 0 0 10px;
+            font-size: clamp(2rem, 5vw, 3rem);
+        }
+
+        .reviews-box p {
+            color: #aaa;
+            max-width: 650px;
+            margin: 0 auto 28px;
+        }
+
+        .review-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .review-button-google {
+            background: #fff;
+            color: #111;
+        }
+
+        .review-button-google:hover {
+            opacity: 0.9;
+        }
+
+
         /* LATEST WORK */
 
         .work-section {
-            background: #0a0a0a;
+            background: #050505;
         }
 
         .work-grid {
@@ -345,7 +394,7 @@
         /* LOCATION */
 
         .location-section {
-            background: #050505;
+            background: #0a0a0a;
         }
 
         .location-box {
@@ -396,54 +445,6 @@
 
         .location-panel h3 {
             margin: 0;
-        }
-
-
-        /* GOOGLE REVIEWS */
-
-        .reviews-section {
-            background: #0a0a0a;
-        }
-
-        .reviews-box {
-            background: #111;
-            border: 1px solid #222;
-            border-radius: 14px;
-            padding: 45px 30px;
-            text-align: center;
-        }
-
-        .reviews-stars {
-            font-size: 2rem;
-            letter-spacing: 4px;
-            margin-bottom: 10px;
-        }
-
-        .reviews-box h2 {
-            margin: 0 0 10px;
-            font-size: clamp(2rem, 5vw, 3rem);
-        }
-
-        .reviews-box p {
-            color: #aaa;
-            max-width: 650px;
-            margin: 0 auto 25px;
-        }
-
-        .review-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 14px;
-        }
-
-        .review-button-google {
-            background: #fff;
-            color: #111;
-        }
-
-        .review-button-google:hover {
-            opacity: 0.9;
         }
 
 
@@ -601,7 +602,7 @@
             }
 
             .reviews-box {
-                padding: 30px 20px;
+                padding: 35px 20px;
             }
         }
 
@@ -617,22 +618,43 @@
     <nav>
 
         <div class="nav-logo">
+
             <img
                 src="logo.PNG"
                 alt="Speedy Mobile Mechanics logo"
             >
+
             <span>SPEEDY MOBILE MECHANICS</span>
+
         </div>
 
+
         <div class="nav-links">
-            <a href="#services">SERVICES</a>
-            <a href="#latest-work">LATEST WORK</a>
-            <a href="#location">LOCATION</a>
-            <a href="#reviews">REVIEWS</a>
-            <a href="#contact">CONTACT</a>
+
+            <a href="#services">
+                SERVICES
+            </a>
+
+            <a href="#reviews">
+                REVIEWS
+            </a>
+
+            <a href="#latest-work">
+                LATEST WORK
+            </a>
+
+            <a href="#location">
+                LOCATION
+            </a>
+
+            <a href="#contact">
+                CONTACT
+            </a>
+
         </div>
 
     </nav>
+
 
 
     <div class="hero">
@@ -643,19 +665,23 @@
             alt="Speedy Mobile Mechanics"
         >
 
+
         <h1>
             SPEEDY <span>MOBILE</span><br>
             MECHANICS
         </h1>
+
 
         <p class="tagline">
             Vehicle servicing, diagnostics and repairs from a trusted
             local mechanic in Warrington.
         </p>
 
+
         <p class="hero-location">
             Mobile across Warrington & Cheshire • Workshop at Old Winwick Quay
         </p>
+
 
         <div class="cta-buttons">
 
@@ -665,6 +691,7 @@
             >
                 📞 07860 658060
             </a>
+
 
             <a
                 href="https://wa.me/447860658060?text=Hi%20Speedy%20Mobile%20Mechanics%2C%20I%27d%20like%20a%20quote"
@@ -697,7 +724,9 @@
 
             <div class="section-title">
 
-                <p>What we do</p>
+                <p>
+                    What we do
+                </p>
 
                 <h2>
                     Servicing & Repairs
@@ -712,66 +741,120 @@
             </div>
 
 
+
             <div class="services-grid">
 
+
                 <div class="service-card">
-                    <div class="service-icon">🔧</div>
-                    <h3>Vehicle Servicing</h3>
+
+                    <div class="service-icon">
+                        🔧
+                    </div>
+
+                    <h3>
+                        Vehicle Servicing
+                    </h3>
+
                     <p>
                         Interim and full servicing to keep your vehicle
                         maintained and running properly.
                     </p>
+
                 </div>
 
 
+
                 <div class="service-card">
-                    <div class="service-icon">🛞</div>
-                    <h3>Brakes & Suspension</h3>
+
+                    <div class="service-icon">
+                        🛞
+                    </div>
+
+                    <h3>
+                        Brakes & Suspension
+                    </h3>
+
                     <p>
                         Brake pads, discs, suspension components and
                         general mechanical repairs.
                     </p>
+
                 </div>
 
 
+
                 <div class="service-card">
-                    <div class="service-icon">💻</div>
-                    <h3>Diagnostics</h3>
+
+                    <div class="service-icon">
+                        💻
+                    </div>
+
+                    <h3>
+                        Diagnostics
+                    </h3>
+
                     <p>
-                        Vehicle diagnostics, warning lights and fault
-                        finding.
+                        Vehicle diagnostics, warning lights and fault finding.
                     </p>
+
                 </div>
 
 
+
                 <div class="service-card">
-                    <div class="service-icon">🔋</div>
-                    <h3>Batteries & Electrics</h3>
+
+                    <div class="service-icon">
+                        🔋
+                    </div>
+
+                    <h3>
+                        Batteries & Electrics
+                    </h3>
+
                     <p>
-                        Battery replacement and investigation of
-                        electrical faults.
+                        Battery replacement and investigation of electrical faults.
                     </p>
+
                 </div>
 
 
+
                 <div class="service-card">
-                    <div class="service-icon">✅</div>
-                    <h3>MOT Preparation</h3>
+
+                    <div class="service-icon">
+                        ✅
+                    </div>
+
+                    <h3>
+                        MOT Preparation
+                    </h3>
+
                     <p>
                         Pre-MOT inspections and repairs to help get your
                         vehicle ready for its test.
                     </p>
+
                 </div>
 
 
+
                 <div class="service-card">
-                    <div class="service-icon">🚐</div>
-                    <h3>Mobile Repairs</h3>
+
+                    <div class="service-icon">
+                        🚐
+                    </div>
+
+                    <h3>
+                        Mobile Repairs
+                    </h3>
+
                     <p>
                         Many jobs can be carried out at your home or
                         workplace for maximum convenience.
                     </p>
+
                 </div>
+
 
             </div>
 
@@ -787,7 +870,9 @@
 
         <div class="section-title">
 
-            <p>Speedy Mobile Mechanics</p>
+            <p>
+                Speedy Mobile Mechanics
+            </p>
 
             <h2>
                 Why Choose Us?
@@ -798,43 +883,127 @@
 
         <div class="why-grid">
 
+
             <div class="why-item">
-                <h3>🚐 Mobile Service</h3>
+
+                <h3>
+                    🚐 Mobile Service
+                </h3>
+
                 <p>
                     We can come to your home or workplace for many
                     servicing and repair jobs.
                 </p>
+
             </div>
 
 
+
             <div class="why-item">
-                <h3>🔧 Experienced Mechanics</h3>
+
+                <h3>
+                    🔧 Experienced Mechanics
+                </h3>
+
                 <p>
                     Professional vehicle repairs from experienced,
                     trusted local mechanics.
                 </p>
+
             </div>
 
 
+
             <div class="why-item">
-                <h3>💷 Up-Front Pricing</h3>
+
+                <h3>
+                    💷 Up-Front Pricing
+                </h3>
+
                 <p>
-                    Straightforward pricing with no unnecessary
-                    surprises.
+                    Straightforward pricing with no unnecessary surprises.
                 </p>
+
             </div>
 
 
+
             <div class="why-item">
-                <h3>⚙️ Quality Workmanship</h3>
+
+                <h3>
+                    ⚙️ Quality Workmanship
+                </h3>
+
                 <p>
                     Quality parts and careful workmanship on every job.
                 </p>
+
             </div>
+
 
         </div>
 
     </section>
+
+
+
+    <!-- GOOGLE REVIEWS -->
+
+    <div
+        class="reviews-section"
+        id="reviews"
+    >
+
+        <section class="section">
+
+            <div class="reviews-box">
+
+                <div class="reviews-stars">
+                    ★★★★★
+                </div>
+
+
+                <h2>
+                    Google Reviews
+                </h2>
+
+
+                <p>
+                    See what our customers say about Speedy Mobile Mechanics
+                    on Google, or leave us a review after we've worked on your vehicle.
+                </p>
+
+
+                <div class="review-buttons">
+
+
+                    <a
+                        href="https://maps.app.goo.gl/ZAgMMenhqDV3Cx3R7"
+                        class="button review-button-google"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        ⭐ View Google Reviews
+                    </a>
+
+
+                    <a
+                        href="https://maps.app.goo.gl/ZAgMMenhqDV3Cx3R7"
+                        class="button button-red"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        ✍️ Leave a Review
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
 
 
 
@@ -849,7 +1018,9 @@
 
             <div class="section-title">
 
-                <p>Recent jobs</p>
+                <p>
+                    Recent jobs
+                </p>
 
                 <h2>
                     Latest Work
@@ -863,7 +1034,9 @@
             </div>
 
 
+
             <div class="work-grid">
+
 
                 <a
                     href="https://www.facebook.com/people/Speedy-Mobile-Mechanics-Ltd/100086117239225/"
@@ -871,16 +1044,26 @@
                     target="_blank"
                     rel="noopener"
                 >
+
                     <img
                         src="work1.jpg"
                         alt="Recent vehicle repair by Speedy Mobile Mechanics"
                     >
 
                     <div class="work-card-content">
-                        <h3>Recent Repair</h3>
-                        <p>View more details on Facebook →</p>
+
+                        <h3>
+                            Recent Repair
+                        </h3>
+
+                        <p>
+                            View more details on Facebook →
+                        </p>
+
                     </div>
+
                 </a>
+
 
 
                 <a
@@ -889,16 +1072,26 @@
                     target="_blank"
                     rel="noopener"
                 >
+
                     <img
                         src="work2.jpg"
                         alt="Recent vehicle servicing by Speedy Mobile Mechanics"
                     >
 
                     <div class="work-card-content">
-                        <h3>Vehicle Servicing</h3>
-                        <p>View more details on Facebook →</p>
+
+                        <h3>
+                            Vehicle Servicing
+                        </h3>
+
+                        <p>
+                            View more details on Facebook →
+                        </p>
+
                     </div>
+
                 </a>
+
 
 
                 <a
@@ -907,16 +1100,26 @@
                     target="_blank"
                     rel="noopener"
                 >
+
                     <img
                         src="work3.jpg"
                         alt="Recent mechanical work by Speedy Mobile Mechanics"
                     >
 
                     <div class="work-card-content">
-                        <h3>Mechanical Repairs</h3>
-                        <p>View more details on Facebook →</p>
+
+                        <h3>
+                            Mechanical Repairs
+                        </h3>
+
+                        <p>
+                            View more details on Facebook →
+                        </p>
+
                     </div>
+
                 </a>
+
 
 
                 <a
@@ -925,16 +1128,26 @@
                     target="_blank"
                     rel="noopener"
                 >
+
                     <img
                         src="work4.jpg"
                         alt="Recent brake repair by Speedy Mobile Mechanics"
                     >
 
                     <div class="work-card-content">
-                        <h3>Brakes & Maintenance</h3>
-                        <p>View more details on Facebook →</p>
+
+                        <h3>
+                            Brakes & Maintenance
+                        </h3>
+
+                        <p>
+                            View more details on Facebook →
+                        </p>
+
                     </div>
+
                 </a>
+
 
 
                 <a
@@ -943,16 +1156,26 @@
                     target="_blank"
                     rel="noopener"
                 >
+
                     <img
                         src="work5.jpg"
                         alt="Vehicle diagnostic work by Speedy Mobile Mechanics"
                     >
 
                     <div class="work-card-content">
-                        <h3>Diagnostics</h3>
-                        <p>View more details on Facebook →</p>
+
+                        <h3>
+                            Diagnostics
+                        </h3>
+
+                        <p>
+                            View more details on Facebook →
+                        </p>
+
                     </div>
+
                 </a>
+
 
 
                 <a
@@ -961,18 +1184,29 @@
                     target="_blank"
                     rel="noopener"
                 >
+
                     <img
                         src="work6.jpg"
                         alt="Recent workshop job at Speedy Mobile Mechanics"
                     >
 
                     <div class="work-card-content">
-                        <h3>Workshop Jobs</h3>
-                        <p>View more details on Facebook →</p>
+
+                        <h3>
+                            Workshop Jobs
+                        </h3>
+
+                        <p>
+                            View more details on Facebook →
+                        </p>
+
                     </div>
+
                 </a>
 
+
             </div>
+
 
 
             <div class="work-facebook">
@@ -1005,7 +1239,9 @@
 
             <div class="section-title">
 
-                <p>Our premises</p>
+                <p>
+                    Our premises
+                </p>
 
                 <h2>
                     Find Us in Winwick
@@ -1014,7 +1250,9 @@
             </div>
 
 
+
             <div class="location-box">
+
 
                 <div class="location-info">
 
@@ -1035,6 +1273,7 @@
                         WA2 8RL
                     </p>
 
+
                     <a
                         href="https://maps.app.goo.gl/ZAgMMenhqDV3Cx3R7"
                         class="button button-red"
@@ -1047,69 +1286,27 @@
                 </div>
 
 
+
                 <div class="location-panel">
 
                     <div>
-                        <span>📍</span>
-                        <h3>Old Winwick Quay</h3>
-                        <p>Warrington, WA2 8RL</p>
+
+                        <span>
+                            📍
+                        </span>
+
+                        <h3>
+                            Old Winwick Quay
+                        </h3>
+
+                        <p>
+                            Warrington, WA2 8RL
+                        </p>
+
                     </div>
 
                 </div>
 
-            </div>
-
-        </section>
-
-    </div>
-
-
-
-    <!-- GOOGLE REVIEWS -->
-
-    <div
-        class="reviews-section"
-        id="reviews"
-    >
-
-        <section class="section">
-
-            <div class="reviews-box">
-
-                <div class="reviews-stars">
-                    ⭐⭐⭐⭐⭐
-                </div>
-
-                <h2>
-                    Google Reviews
-                </h2>
-
-                <p>
-                    See what our customers say about Speedy Mobile Mechanics
-                    on Google, or leave us a review after your visit.
-                </p>
-
-                <div class="review-buttons">
-
-                    <a
-                        href="https://maps.app.goo.gl/ZAgMMenhqDV3Cx3R7"
-                        class="button review-button-google"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        ⭐ View Google Reviews
-                    </a>
-
-                    <a
-                        href="https://maps.app.goo.gl/ZAgMMenhqDV3Cx3R7"
-                        class="button button-red"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        ✍️ Leave a Review
-                    </a>
-
-                </div>
 
             </div>
 
@@ -1156,30 +1353,45 @@
 
         <div class="section-title">
 
-            <p>Get in touch</p>
+            <p>
+                Get in touch
+            </p>
 
             <h2>
                 Contact Speedy
             </h2>
 
             <p class="intro">
-                Need a repair, service or quote? Give us a call or send
-                us a message.
+                Need a repair, service or quote?
+                Give us a call or send us a message.
             </p>
 
         </div>
 
 
+
         <div class="contact-grid">
+
 
             <a
                 href="tel:+447860658060"
                 class="contact-card"
             >
-                <div class="icon">📞</div>
-                <h3>Call Us</h3>
-                <p>07860 658060</p>
+
+                <div class="icon">
+                    📞
+                </div>
+
+                <h3>
+                    Call Us
+                </h3>
+
+                <p>
+                    07860 658060
+                </p>
+
             </a>
+
 
 
             <a
@@ -1188,20 +1400,42 @@
                 target="_blank"
                 rel="noopener"
             >
-                <div class="icon">💬</div>
-                <h3>WhatsApp</h3>
-                <p>Send us a message</p>
+
+                <div class="icon">
+                    💬
+                </div>
+
+                <h3>
+                    WhatsApp
+                </h3>
+
+                <p>
+                    Send us a message
+                </p>
+
             </a>
+
 
 
             <a
                 href="mailto:info@speedymobilemechanics.co.uk"
                 class="contact-card"
             >
-                <div class="icon">✉️</div>
-                <h3>Email</h3>
-                <p>info@speedymobilemechanics.co.uk</p>
+
+                <div class="icon">
+                    ✉️
+                </div>
+
+                <h3>
+                    Email
+                </h3>
+
+                <p>
+                    info@speedymobilemechanics.co.uk
+                </p>
+
             </a>
+
 
         </div>
 
@@ -1222,7 +1456,9 @@
             diagnostics and repairs in Warrington and the surrounding area.
         </p>
 
+
         <div class="cta-buttons">
+
 
             <a
                 href="tel:+447860658060"
@@ -1230,6 +1466,7 @@
             >
                 📞 Call Speedy
             </a>
+
 
             <a
                 href="https://wa.me/447860658060?text=Hi%20Speedy%20Mobile%20Mechanics%2C%20can%20you%20help%20with..."
@@ -1239,6 +1476,7 @@
             >
                 💬 WhatsApp
             </a>
+
 
         </div>
 
