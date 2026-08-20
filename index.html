@@ -286,10 +286,66 @@
         }
 
 
+        /* LATEST WORK */
+
+        .work-section {
+            background: #0a0a0a;
+        }
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .work-card {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 12px;
+            overflow: hidden;
+            text-decoration: none;
+            color: #fff;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .work-card:hover {
+            transform: translateY(-3px);
+            border-color: #e50914;
+            text-decoration: none;
+        }
+
+        .work-card img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            display: block;
+        }
+
+        .work-card-content {
+            padding: 20px;
+        }
+
+        .work-card h3 {
+            margin: 0 0 6px;
+            font-size: 1.05rem;
+        }
+
+        .work-card p {
+            margin: 0;
+            color: #999;
+            font-size: 0.92rem;
+        }
+
+        .work-facebook {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+
         /* LOCATION */
 
         .location-section {
-            background: #0a0a0a;
+            background: #050505;
         }
 
         .location-box {
@@ -465,7 +521,8 @@
                 padding-bottom: 65px;
             }
 
-            .services-grid {
+            .services-grid,
+            .work-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -516,7 +573,7 @@
 
         <div class="nav-links">
             <a href="#services">SERVICES</a>
-            <a href="#why-us">WHY US</a>
+            <a href="#latest-work">LATEST WORK</a>
             <a href="#location">LOCATION</a>
             <a href="#contact">CONTACT</a>
         </div>
@@ -672,10 +729,7 @@
 
     <!-- WHY CHOOSE US -->
 
-    <section
-        class="section"
-        id="why-us"
-    >
+    <section class="section">
 
         <div class="section-title">
 
@@ -727,6 +781,164 @@
         </div>
 
     </section>
+
+
+
+    <!-- LATEST WORK -->
+
+    <div
+        class="work-section"
+        id="latest-work"
+    >
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <p>Recent jobs</p>
+
+                <h2>
+                    Latest Work
+                </h2>
+
+                <p class="intro">
+                    A look at some of the vehicles we've recently worked on.
+                    See more repairs, servicing and updates on our Facebook page.
+                </p>
+
+            </div>
+
+
+            <div class="work-grid">
+
+
+                <a
+                    href="https://www.facebook.com/people/Speedy-Mobile-Mechanics-Ltd/100086117239225/"
+                    class="work-card"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    <img
+                        src="work1.jpg"
+                        alt="Recent vehicle repair by Speedy Mobile Mechanics"
+                    >
+
+                    <div class="work-card-content">
+                        <h3>Recent Repair</h3>
+                        <p>View more details on Facebook →</p>
+                    </div>
+                </a>
+
+
+                <a
+                    href="https://www.facebook.com/people/Speedy-Mobile-Mechanics-Ltd/100086117239225/"
+                    class="work-card"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    <img
+                        src="work2.jpg"
+                        alt="Recent vehicle servicing by Speedy Mobile Mechanics"
+                    >
+
+                    <div class="work-card-content">
+                        <h3>Vehicle Servicing</h3>
+                        <p>View more details on Facebook →</p>
+                    </div>
+                </a>
+
+
+                <a
+                    href="https://www.facebook.com/people/Speedy-Mobile-Mechanics-Ltd/100086117239225/"
+                    class="work-card"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    <img
+                        src="work3.jpg"
+                        alt="Recent mechanical work by Speedy Mobile Mechanics"
+                    >
+
+                    <div class="work-card-content">
+                        <h3>Mechanical Repairs</h3>
+                        <p>View more details on Facebook →</p>
+                    </div>
+                </a>
+
+
+                <a
+                    href="https://www.facebook.com/people/Speedy-Mobile-Mechanics-Ltd/100086117239225/"
+                    class="work-card"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    <img
+                        src="work4.jpg"
+                        alt="Recent brake repair by Speedy Mobile Mechanics"
+                    >
+
+                    <div class="work-card-content">
+                        <h3>Brakes & Maintenance</h3>
+                        <p>View more details on Facebook →</p>
+                    </div>
+                </a>
+
+
+                <a
+                    href="https://www.facebook.com/people/Speedy-Mobile-Mechanics-Ltd/100086117239225/"
+                    class="work-card"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    <img
+                        src="work5.jpg"
+                        alt="Vehicle diagnostic work by Speedy Mobile Mechanics"
+                    >
+
+                    <div class="work-card-content">
+                        <h3>Diagnostics</h3>
+                        <p>View more details on Facebook →</p>
+                    </div>
+                </a>
+
+
+                <a
+                    href="https://www.facebook.com/people/Speedy-Mobile-Mechanics-Ltd/100086117239225/"
+                    class="work-card"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    <img
+                        src="work6.jpg"
+                        alt="Recent workshop job at Speedy Mobile Mechanics"
+                    >
+
+                    <div class="work-card-content">
+                        <h3>Workshop Jobs</h3>
+                        <p>View more details on Facebook →</p>
+                    </div>
+                </a>
+
+
+            </div>
+
+
+            <div class="work-facebook">
+
+                <a
+                    href="https://www.facebook.com/people/Speedy-Mobile-Mechanics-Ltd/100086117239225/"
+                    class="button button-red"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    👍 See More on Facebook
+                </a>
+
+            </div>
+
+        </section>
+
+    </div>
 
 
 
@@ -808,15 +1020,15 @@
         <div class="facebook">
 
             <h2>
-                Follow Us on Facebook
+                Follow Speedy on Facebook
             </h2>
 
             <p>
-                See our latest work, vehicle repairs, updates and offers.
+                See our latest repairs, servicing jobs, workshop updates and offers.
             </p>
 
             <a
-                href="https://www.facebook.com/share/1Cs5DS6rQL/?mibextid=wwXIfr"
+                href="https://www.facebook.com/people/Speedy-Mobile-Mechanics-Ltd/100086117239225/"
                 target="_blank"
                 rel="noopener"
             >
