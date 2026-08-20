@@ -399,6 +399,54 @@
         }
 
 
+        /* GOOGLE REVIEWS */
+
+        .reviews-section {
+            background: #0a0a0a;
+        }
+
+        .reviews-box {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 14px;
+            padding: 45px 30px;
+            text-align: center;
+        }
+
+        .reviews-stars {
+            font-size: 2rem;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+        }
+
+        .reviews-box h2 {
+            margin: 0 0 10px;
+            font-size: clamp(2rem, 5vw, 3rem);
+        }
+
+        .reviews-box p {
+            color: #aaa;
+            max-width: 650px;
+            margin: 0 auto 25px;
+        }
+
+        .review-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .review-button-google {
+            background: #fff;
+            color: #111;
+        }
+
+        .review-button-google:hover {
+            opacity: 0.9;
+        }
+
+
         /* FACEBOOK */
 
         .facebook {
@@ -543,12 +591,17 @@
                 padding-bottom: 60px;
             }
 
-            .cta-buttons {
+            .cta-buttons,
+            .review-buttons {
                 flex-direction: column;
             }
 
             .button {
                 width: 100%;
+            }
+
+            .reviews-box {
+                padding: 30px 20px;
             }
         }
 
@@ -575,6 +628,7 @@
             <a href="#services">SERVICES</a>
             <a href="#latest-work">LATEST WORK</a>
             <a href="#location">LOCATION</a>
+            <a href="#reviews">REVIEWS</a>
             <a href="#contact">CONTACT</a>
         </div>
 
@@ -811,7 +865,6 @@
 
             <div class="work-grid">
 
-
                 <a
                     href="https://www.facebook.com/people/Speedy-Mobile-Mechanics-Ltd/100086117239225/"
                     class="work-card"
@@ -919,7 +972,6 @@
                     </div>
                 </a>
 
-
             </div>
 
 
@@ -984,7 +1036,7 @@
                     </p>
 
                     <a
-                        href="https://www.google.com/maps/search/?api=1&query=Old+Winwick+Quay+Mill+Lane+Winwick+Warrington+WA2+8RL"
+                        href="https://maps.app.goo.gl/ZAgMMenhqDV3Cx3R7"
                         class="button button-red"
                         target="_blank"
                         rel="noopener"
@@ -1002,6 +1054,60 @@
                         <h3>Old Winwick Quay</h3>
                         <p>Warrington, WA2 8RL</p>
                     </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+    <!-- GOOGLE REVIEWS -->
+
+    <div
+        class="reviews-section"
+        id="reviews"
+    >
+
+        <section class="section">
+
+            <div class="reviews-box">
+
+                <div class="reviews-stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <h2>
+                    Google Reviews
+                </h2>
+
+                <p>
+                    See what our customers say about Speedy Mobile Mechanics
+                    on Google, or leave us a review after your visit.
+                </p>
+
+                <div class="review-buttons">
+
+                    <a
+                        href="https://maps.app.goo.gl/ZAgMMenhqDV3Cx3R7"
+                        class="button review-button-google"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        ⭐ View Google Reviews
+                    </a>
+
+                    <a
+                        href="https://maps.app.goo.gl/ZAgMMenhqDV3Cx3R7"
+                        class="button button-red"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        ✍️ Leave a Review
+                    </a>
 
                 </div>
 
